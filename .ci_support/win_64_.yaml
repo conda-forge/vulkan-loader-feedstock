@@ -7,6 +7,6 @@ channel_targets:
 cxx_compiler:
 - vs2019
 libxcb:
-- '1.16'
+- '1'
 target_platform:
 - win-64
