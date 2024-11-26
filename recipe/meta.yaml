@@ -27,6 +27,7 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
     - python
+    - pkg-config
   host:
     - libvulkan-headers {{ version }}
     - libxcb  # [linux]
