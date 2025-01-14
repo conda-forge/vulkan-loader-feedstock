@@ -1,5 +1,5 @@
 {% set name = "libvulkan-loader" %}
-{% set version = "1.3.296.0" %}
+{% set version = "1.4.304.0" %}
 
 package:
   name: {{ name }}
@@ -10,7 +10,7 @@ package:
 # See https://github.com/KhronosGroup/Vulkan-Headers#version-tagging-scheme
 source:
   url: https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/vulkan-sdk-{{ version }}.tar.gz
-  sha256: 924b439421c30513f59dfd360cb1309639c1522de28608eb64c9d79581e44c72
+  sha256: 975ac2976276964d5bfd8e97b28aab85f651b225fa152ba415067f7d4443996f
   patches:
     - disable_macos_framework.patch
 
