@@ -15,7 +15,7 @@ source:
     - disable_macos_framework.patch
 
 build:
-  number: 0
+  number: 1
   ignore_run_exports_from:
     # only the headers are used by the feedstock
     - libxcb
@@ -33,6 +33,7 @@ requirements:
     - libxcb  # [linux]
     - xorg-libx11  # [linux]
     - xorg-libxrandr  # [linux]
+    - xorg-xorgproto  # [linux]
   run_constrained:
     - libvulkan-headers {{ version }}
 
