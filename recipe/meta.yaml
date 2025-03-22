@@ -33,7 +33,7 @@ requirements:
     - libxcb  # [linux]
     - xorg-libx11  # [linux]
     - xorg-libxrandr  # [linux]
-    - xorg-xorgproto # [linux]
+    - xorg-xorgproto  # [linux]
   run_constrained:
     - libvulkan-headers {{ version }}
 
