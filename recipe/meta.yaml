@@ -53,4 +53,5 @@ about:
 extra:
   feedstock-name: vulkan-loader
   recipe-maintainers:
+    - JarrettSJohnson
     - traversaro
