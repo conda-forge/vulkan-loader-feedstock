@@ -46,7 +46,9 @@ requirements:
 tests:
   - package_contents:
       lib:
-        - vulkan
+        - if: win
+          then: vulkan-1
+          else: vulkan
 
 about:
   license: Apache-2.0
