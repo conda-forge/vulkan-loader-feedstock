@@ -7,7 +7,7 @@
 
 [project]
 name = "vulkan-loader-feedstock"
-version = "3.47.2"  # conda-smithy version used to generate this file
+version = "3.48.1"  # conda-smithy version used to generate this file
 description = "Pixi configuration for conda-forge/vulkan-loader-feedstock"
 authors = ["@conda-forge/vulkan-loader"]
 channels = ["conda-forge"]
@@ -61,6 +61,12 @@ description = "Build vulkan-loader-feedstock with variant win_64_ directly (with
 [tasks."inspect-win_64_"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_.yaml"
 description = "List contents of vulkan-loader-feedstock packages built for variant win_64_"
+[tasks."build-win_arm64_"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_arm64_.yaml"
+description = "Build vulkan-loader-feedstock with variant win_arm64_ directly (without setup scripts)"
+[tasks."inspect-win_arm64_"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_arm64_.yaml"
+description = "List contents of vulkan-loader-feedstock packages built for variant win_arm64_"
 
 [feature.smithy.dependencies]
 conda-smithy = "*"
