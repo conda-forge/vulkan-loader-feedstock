@@ -18,7 +18,7 @@ source:
     - disable_macos_framework.patch
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -38,6 +38,8 @@ requirements:
         - xorg-xorgproto
   run_constraints:
     - libvulkan-headers =${{ version }}
+  run_exports:
+    - ${{ pin_subpackage(name, upper_bound="x") }}
   ignore_run_exports:
     from_package: 
        # only the headers are used by the feedstock
