@@ -16,8 +16,6 @@ source:
   sha256: 54f2537df22313768da0317dda2abdaaab7711b4081c48c869a79db343d0ae70
   patches:
     - disable_macos_framework.patch
-    # https://github.com/KhronosGroup/Vulkan-Loader/issues/2017
-    - dedup_icds_by_library_handle.patch
     - linux_sort_ties_by_driver_order.patch
 
 build:
