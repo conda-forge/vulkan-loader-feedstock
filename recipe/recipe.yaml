@@ -18,9 +18,10 @@ source:
     - disable_macos_framework.patch
     # https://github.com/KhronosGroup/Vulkan-Loader/issues/2017
     - dedup_icds_by_library_handle.patch
+    - linux_sort_ties_by_driver_order.patch
 
 build:
-  number: 2
+  number: 3
 
 requirements:
   build:
