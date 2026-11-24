@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: libvulkan-loader
-  version: "1.4.357.0"
+  version: "1.4.363.0"
 
 package:
   name: ${{ name }}
@@ -13,14 +13,14 @@ package:
 # See https://github.com/KhronosGroup/Vulkan-Headers#version-tagging-scheme
 source:
   url: https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/vulkan-sdk-${{ version }}.tar.gz
-  sha256: 54f2537df22313768da0317dda2abdaaab7711b4081c48c869a79db343d0ae70
+  sha256: 941eff558fc74f248745fb7df367640cf89a8457f216dae498a74ae14b6ba6f7
   patches:
     - disable_macos_framework.patch
     # https://github.com/KhronosGroup/Vulkan-Loader/issues/2017
     - dedup_icds_by_library_handle.patch
 
 build:
-  number: 2
+  number: 0
 
 requirements:
   build:
